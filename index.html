@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relap</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+            }
+
+            div#container {
+                width: auto;
+                height: 900px;
+                background-color: lightgreen;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            nav {
+                width: auto;
+                height: 45px;
+                background-color: #6D41BF;
+                color: white;
+                padding: 5px 30px;
+                /* text-align: center; */
+            }
+
+            nav h1, nav ul, nav ul li {
+                display: inline-block;
+            }
+
+            nav h1 {
+                margin-right: 450px;
+                text-align: left;
+            }
+
+            nav li {
+                margin: 0 10px;
+            }
+
+            div.contact-button {
+                width: 200px;
+                background-color: transparent;
+                text-align: center;
+                padding: 0px 10px;
+                margin-left: 300px;
+                box-sizing: border-box;
+                border-radius: 30px;
+                border: 2px solid white;
+                display: inline-block;
+                font-family: sans-serif;
+            }
+
+            section.section1 {
+                background: linear-gradient(to bottom, #834bc4 0%, #c06ad5 100%);
+            }
+
+            div.section-holder {
+                text-align: left;
+                margin-top: 80px;
+                margin-left: 85px;
+                display: inline-block;
+                vertical-align: top;
+                color: white;
+            }
+
+            div.section-holder h1{
+                font-size: 50px;
+            }
+
+            section.section1 img{
+                width: 400px;
+                height: 400px;
+                display: inline-block;
+                margin-left: 400px;
+            }
+
+            div.explore-button {
+                width: 150px;
+                height: 50px;
+                color: white;
+                background-color: #ffc300;
+                text-align:center;
+                margin-top: 60px;
+                padding: 15px 0;
+                box-sizing: border-box;
+                border-radius: 30px;
+                border: 2px solid #ffc300;
+            }
+
+            section.section2 {
+                background-color: #fdf1ff;
+            }
+
+            div.section2-header, div.section2-content {
+                width: 200px;
+                height: 200px;
+                margin-top: 100px;
+                /* background-color: red; */
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            p.section1-para {
+                width: 350px;
+            }
+
+            div.section2-header {
+                margin-left: 60px;
+            }
+
+            div.section2-content {
+                margin-left: 400px;
+                width: 520px;
+            }
+
+            div.section2-list {
+                margin-left: 10px;
+            }
+            div.section2-list ul li {
+                display:inline-block;
+                margin-left: 50px;
+            }
+
+            div.section2-imgs {
+                margin-top: 20px;
+                padding-bottom: 100px;
+                margin-left: 10px;
+                text-align: center;
+            }
+
+            div.section2-imgs ul li {
+                display: inline-block;
+                margin-left: 30px;
+            }
+            div.section2-imgs img {
+                width: 400px;
+                height: 300px;
+            }
+
+            section.section3 {
+                background-color: #3023AE;
+                color: white;
+            }
+
+            div.section3-content {
+                text-align: center;
+                padding: 100px 0;
+                /* padding-bottom: 100px; */
+            }
+            div.section3-img img {
+                width: 350px;
+                height: 350px;
+                margin-top: 50px;
+            }
+
+            div.section3-header {
+                text-align: left;
+                margin-left: 200px;
+                width: 480px;
+            }
+
+            div.section3-img, div.section3-header {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            section.section4 {
+                padding: 50px 0; 
+                background-color: #dfd9d9;
+                text-align: center;
+            }
+
+            div.section4-header {
+                width: auto;
+                text-align: center;
+            }
+
+            div.section4-header p {
+                width: 500px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            div.card {
+                width: 330px;
+                height: 200px;
+                background-color: white;
+                text-align: center;
+                margin: 5px 5px;
+                display: inline-block;
+            }
+
+            div.card img {
+                padding: 30px 0;
+            }
+
+            div.section4-content {
+                text-align: center;
+                padding: 40px 0;
+            }
+
+            section.section5 {
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 400px;
+            }
+
+            div.section5-header {
+                width: auto;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            div.section5-header p {
+                width: 500px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            div.section5-card {
+                width: 300px;
+                height: 200px;
+                background-color: white;
+                text-align: left;
+                margin: 5px 20px;
+                display: inline-block;
+                box-shadow: 2px 2px 15px grey;
+            }
+
+            div.section5-card p, div.section5-card h3 {
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            div.section5-card img {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            div.section5-img {
+                width: 80px;
+                height: 80px;
+                background-color: white;
+                margin: 10px 15px;
+                border-radius: 50%; /*circle*/ /*use % to always have it be a circle*/
+                overflow: hidden;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <nav>
+                <h1>Relap</h1>
+                
+                <ul>
+                    <il>Home</il>
+                    <il>Features</il>
+                    <il>Work</il>
+                    <il>About</il>
+                    <il>People</il>
+                    <il>News</il>
+                </ul>
+
+                <div class="contact-button">
+                    <p>Contact Us</p>
+                </div>
+            </nav>
+            
+
+            <section class="section1">
+                <div class="section-holder">
+                    <h1>Omnis <br/> Voluptas</h1>
+                    <p class="section1-para">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repundiandae sint et molestiae non recusandae.</p>
+
+                    <div class="explore-button">
+                        <p>Explore</p>
+                    </div>  
+                </div>
+
+                <img src="images/banner_bg.png">
+            </section>
+
+            <section class="section2">
+                <div class="head">
+                    <div class="section2-header">
+                        <p>Nisi ut aliquid</p>
+                        <h1>Ullam corporis suscipit</h1>
+                    </div>
+    
+                    <div class="section2-content">
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernartur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nescuint. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+            
+                <div class="section2-list">
+                    <ul>
+                        <li>Quis Autem</li>
+                        <li>Reprehenderit</li>
+                        <li>Voluptate</li>
+                        <li>Molestiae</li>
+                        <li>Consequatur</li>
+                    </ul>
+                </div>
+
+                <div class="section2-imgs">
+                    <ul>
+                        <li>
+                            <img src="images/gallery_1.png">
+                        </li>
+
+                        <li>
+                            <img src="images/gallery_2.png">
+                        </li>
+
+                        <li>
+                            <img src="images/gallery_3.png">
+                        </li>
+                    </ul> 
+                </div>
+            </section>
+
+            <section class="section3">
+                <div class="section3-content">
+                    <div class="section3-img">
+                        <img src="images/about_img.png">
+                    </div>
+                    <div class="section3-header">
+                        <p>Repellendus</p>
+                        <h1>Temporibus Quibusdam</h1>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est. <br/>Our Team</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section4">
+                <div class="section4-header">
+                    <h1>Fugiat Quo</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+
+                <div class="section4-content">
+                    <div class="card">
+                        <img src="images/icon_1.png">
+                        <h1>Consequuntur</h1>
+                        <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/icon_2.png">
+                        <h1>Consequuntur</h1>
+                        <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/icon_3.png">
+                        <h1>Consequuntur</h1>
+                        <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="images/icon_4.png">
+                        <h1>Consequuntur</h1>
+                        <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/icon_5.png">
+                        <h1>Consequuntur</h1>
+                        <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/icon_6.png">
+                        <h1>Consequuntur</h1>
+                        <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section5">
+                <div class="section5-header">
+                    <h2>Testimonial</h2>
+                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
+                </div>
+
+                <div class="section5-content">
+                    <div class="section5-card">
+                        <div class="section5-image">
+                            <img src="images/profile_1.png">
+                        </div>
+
+                        <p>"Voluptatem accusatium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+                        <h3>Malin Quist</h3>
+                    </div>
+
+                    <div class="section5-card">
+                        <div class="section5-image">
+                            <img src="images/profile_2.png">
+                        </div>
+
+                        <p>"Voluptatem accusatium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+                        <h3>Malin Quist</h3>
+                    </div>
+                    
+                    <div class="section5-card">
+                        <div class="section5-image">
+                            <img src="images/profile_3.png">
+                        </div>
+
+                        <p>"Voluptatem accusatium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+                            <h3>Malin Quist</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
